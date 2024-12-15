@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish | Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav .brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: none;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #2c3e50, #34495e);
+            color: #fff;
+        }
+
+        .intro h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .intro span {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .intro img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: #f39c12;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background: #34495e;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .skill:hover {
+            background: #f39c12;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #f39c12;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #2c3e50;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #f39c12;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .footer-icons a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .footer-icons img {
+            width: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        #typed-text {
+            color: #dee33a;  /* Changed color to red */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="brand">Manish | Developer Portfolio</div>
+    </nav>
+</header>
+<section class="intro">
+    <h1>Hi, I'm <span>Manish Bisht</span></h1>
+    <p><span id="typed-text"></span></p>
+    <img src="image/photo.png" alt="Manish's Photo">
+</section>
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Java</div>
+        <div class="skill">DSA</div>
+    </div>
+</section>
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Bankist Application</h3>
+            <p>An interactive banking interface for users to manage transactions securely.</p>
+            <a href="https://chimerical-druid-381540.netlify.app/">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Forkify Application</h3>
+            <p>A recipe application with dynamic search functionality and custom favorites list.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Explorify</h3>
+            <p>A travel and exploration application showcasing the best destinations.</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p>&copy; 2024 Manish Bisht. All rights reserved.</p>
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/manish-singh-bisht-862b6829b/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/ManishBisht17" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        
+    </div>
+</footer>
+
+<script>
+    // TypeScript to create typing effect with color and faster speed
+    window.onload = function () {
+        const text = "A passionate Backend Developer specializing in building modern, scalable web applications.";
+        const element = document.getElementById('typed-text');
+        let i = 0;
+
+        function typeText() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeText, 50);  // Adjusted delay to make it 2x faster
+            }
+        }
+
+        typeText();
+    }
+</script>
+
+</body>
+</html>
