@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -26,6 +27,9 @@
             padding: 15px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav {
@@ -75,6 +79,12 @@
             max-width: 150px;
             border-radius: 50%;
             margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .intro img:hover {
+            transform: scale(1.05);
         }
 
         .section {
@@ -117,6 +127,7 @@
             text-align: center;
             transition: transform 0.3s ease, background 0.3s ease;
             font-size: 0.9rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
 
         .skill:hover {
@@ -137,11 +148,12 @@
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .project:hover {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
         }
 
         .project h3 {
@@ -160,6 +172,11 @@
             color: #f39c12;
             font-weight: 500;
             display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #2c3e50;
         }
 
         .footer {
@@ -282,7 +299,7 @@
             <a href="https://forkifymanish.vercel.app/">View Project</a>
         </div>
         <div class="project">
-            <h3>Explorify</h3>
+            <h3>Explorify Application</h3>
             <p>A travel and exploration application showcasing the best destinations User Authentication and Authorization: Users can create accounts, log in, and manage their profiles. 
                 
                 Tour Management: Users can browse and book various tours, each with detailed information, including duration, difficulty, price, and ratings.
